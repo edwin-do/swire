@@ -1,8 +1,3 @@
-var hits = 0;
-var num_enemies = 3;
-var enemy_balls = [];
-var c = canvas.getContext("2d");
-
 window.ondeviceorientation = function(event)
 {
   // the alpha/beta/gamma values are in the event object, output them here

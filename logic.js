@@ -1,3 +1,10 @@
+// global variables
+
+var hits = 0;
+var num_enemies = 3;
+var enemy_balls = [];
+var c = canvas.getContext("2d");
+
 function game_logic()
 {
   // check if the balls have collided with a boundary
