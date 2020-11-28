@@ -6,13 +6,15 @@ window.ondeviceorientation = function(event)
 {
 // controls ball movement (Display up orientation with beta at 20)
 // assumes the natural phone position is 20; ranges from 10-40 for natual movement
-  if (event.beta < 20 && event.beta > 10){
-    player_ball.vy = -1.5*y_sensitivity*(event.beta/10);
-  }
-  else if(event.beta > 20 && event.beta < 40){
-    player_ball.vy = y_sensitivity*(event.beta/10);
-  }
+  // if (event.beta < 20 && event.beta > 10){
+  //   player_ball.vy = -1.5*y_sensitivity*(event.beta/10);
+  // }
+  // else if(event.beta > 20 && event.beta < 40){
+  //   player_ball.vy = y_sensitivity*(event.beta/10);
+  // }
 
+  // assume starting position is display up, portrait mode
+  player_ball.vy = y_sensitivity*(event.beta/10);
   player_ball.vx = x_sensitivity*event.alpha;
 }
 
