@@ -5,10 +5,13 @@ body{
 canvas{
     background-color:#EBEBE7;
     border-radius: 2%;
-
     border: 3px black solid;
 }
 
 #canvas{
     width: 100%;
+}
+
+#settings{
+    display: none;
 }

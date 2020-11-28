@@ -3,11 +3,10 @@
     window.onload = function() {
         // get the canvas element 
         var canvas = document.getElementById("canvas");
+        //responsive canvas
         var heightRatio = 0.65;
         canvas.height = canvas.width * heightRatio;    
   
-        // create the enemy balls
-        // createEnemies();
         // recogonizes and carries out any game logic, i.e. collisions 
         game_logic();
   

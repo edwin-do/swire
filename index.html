@@ -15,14 +15,20 @@
       </canvas>
     </div>
     <div class="text-center">
-      <button>Help</button>
-      <button>Settings</button>
+      <button id="btnHelp">Help</button>
+      <button id="btnSettings">Settings</button>
     </div>
     <div id="content">
       <div id="help">
+        <h5>How To Play</h5>
+        <p>Tilt your device to move the green ball into the black square (hole).
+           Try changing your sensitivity in settings if you have difficulties
+        </p>
+        <p>The label "Drops" keeps track of your score. Have fun! </p>
 
       </div>
       <div id="settings">
+        <h5>Settings</h5>
         <h5 class="font-weight-light mt-2">Current Horizontal Sensitivity: <span id="sensitivityX">0.3</span></h5>
         <div class="input-group mt-2">
           <select class="custom-select" id="inputSensitivityX" aria-label="Example select with button addon">
@@ -50,6 +56,19 @@
 
     </div>
   </div>
+
+  <!-- Help & Settings -->
+  <script>
+    document.getElementById("btnHelp").onclick = function(){
+      document.getElementById("help").style.display = "block";
+      document.getElementById("settings").style.display = "none";
+    }
+
+    document.getElementById("btnSettings").onclick = function(){
+      document.getElementById("help").style.display = "none";
+      document.getElementById("settings").style.display = "block";
+    }
+  </script>
 
   <!-- Game JS Files -->
   <script src="./js/objects/ball.js"></script>
