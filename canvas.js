@@ -1,4 +1,5 @@
     // run the code when the document has finished loading
+    var c = canvas.getContext("2d");
     window.onload = function() {
         // get the canvas element 
         var canvas = document.getElementById("canvas");    
@@ -16,6 +17,8 @@
   
           // draw the balls to the screen
           player_ball.draw();
+
+          black_hole.draw();
           for (var i = 0; i < num_enemies; i++) enemy_balls[i].draw();
   
           // draw the hits to the screen in the top-left corner
