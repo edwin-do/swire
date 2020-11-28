@@ -14,8 +14,8 @@ window.ondeviceorientation = function(event)
   // }
 
   // assume starting position is display up, portrait mode
-  player_ball.vy = y_sensitivity*(event.beta/5);
-  player_ball.vx = x_sensitivity*((event.alpha + event.gamma)/2);
+  player_ball.vy = y_sensitivity*(event.beta/7);
+  player_ball.vx = x_sensitivity*((-event.alpha/2 + event.gamma));
 }
 
 document.getElementById("btn_sensitivityX").onclick = function(){
