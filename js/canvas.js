@@ -20,8 +20,8 @@
           black_hole.draw();
   
           // draw the hits to the screen in the top-left corner
-          c.font = "20px serif";
-          c.fillText("Hits: " + hits, 5, 20);
+          c.font = "30px serif";
+          c.fillText("Drops: " + drops, 15, 30);
         }
   
         // game loop runs every 30 milliseconds

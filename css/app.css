@@ -1,11 +1,10 @@
 body{
+    color: whitesmoke;
     background-color: #414D66;
 }
 canvas{
     background-color:#EBEBE7;
     border-radius: 2%;
-    width: 80vw;
-    height: 50vh;
 
-    border: 1px black solid;
+    border: 3px black solid;
 }

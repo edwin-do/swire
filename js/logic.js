@@ -1,5 +1,5 @@
 // global variables
-var hits = 0;
+var drops = 0;
 
 function game_logic()
 {
@@ -12,8 +12,8 @@ function game_logic()
   var distance = Math.sqrt(dx * dx + dy * dy);
 
   if (distance < black_hole.radius + player_ball.radius) {
-        hits++;
-        black_hole = new hole(50, 'black');
+        drops++;
+        black_hole = new hole('black');
       }
 
   // move the ball
