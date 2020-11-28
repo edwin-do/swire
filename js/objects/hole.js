@@ -5,9 +5,11 @@ class hole {
   
     // create a ball object
     constructor(r,color) {
-      this.x = Math.random() * 1000;  // x position
-      this.y = Math.random() * 600;  // y position
-      this.radius = r; // radius
+      this.x = Math.random() * 900;  // x position
+      this.y = Math.random() * 500;  // y position
+      this.w = 70;
+      this.h = 70;
+      this.radius = Math.sqrt(2*(50/2)^2); // radius
       this.color = color;
     }
 
@@ -15,15 +17,10 @@ class hole {
     draw() {
       c.beginPath();
       c.fillStyle = this.color;
-      c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-      c.fill(); 
+      // set x and y at the center of the square
+      c.fillRect(this.x -this.w/2, this.y - this.h/2, this.w, this.h);
 
     } 
-
-    // newPosition(){
-    //     new_x = Math.random() * 1000;
-    //     new_y = Math.random() * 500; 
-    // }
 
   }
 

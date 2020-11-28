@@ -8,10 +8,10 @@ window.ondeviceorientation = function(event)
 
 // controls ball movement(portrait orientation)
   if (event.beta < 90){
-    player_ball.vy = -7*(event.beta/90);
+    player_ball.vy = -8*(event.beta/90);
   }
   else if(event.beta > 90){
-    player_ball.vy = 7*(event.beta/90);
+    player_ball.vy = 8*(event.beta/90);
   }
 
   player_ball.vx = 0.5*event.alpha;
