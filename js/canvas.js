@@ -15,11 +15,9 @@
           // clear the canvas so that we start off with a blank canvas
           c.clearRect(0,0,canvas.width,canvas.height);
   
-          // draw the balls to the screen
+          // draw the ball and hole to the screen
           player_ball.draw();
-
           black_hole.draw();
-          // for (var i = 0; i < num_enemies; i++) enemy_balls[i].draw();
   
           // draw the hits to the screen in the top-left corner
           c.font = "20px serif";
