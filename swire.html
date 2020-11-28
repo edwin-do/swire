@@ -7,21 +7,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>Game Loop Example</h1>
+    <h1>Swire</h1>
     <canvas id="canvas" width="1200" height="600">
       Display this text if browser does not support canvas.
     </canvas>
+
+    <p>Alpha: <span id="alpha"></span></p>
+    <p>Beta: <span id="beta"></span></p>
+    <p>Gamma: <span id="gamma"></span></p>
+
+    <p>Horizontal Tilt: <span id="horizontal"></span></p>
+    <p>Vertical Tilt: <span id="vertical"></span></p>
   </div>
 
-
-
-  <p>Alpha: <span id="alpha"></span></p>
-  <p>Beta: <span id="beta"></span></p>
-  <p>Gamma: <span id="gamma"></span></p>
-
-  <p>Horizontal Tilt: <span id="horizontal"></span></p>
-  <p>Vertical Tilt: <span id="vertical"></span></p>
-
+  <!-- Game JS Files -->
   <script src="./js/objects/ball.js"></script>
   <script src="./js/objects/hole.js"></script>
   <script src="./js/controls/keys.js"></script>
@@ -29,6 +28,5 @@
   <script src="./js/canvas.js"></script>
   <script src="./js/logic.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-
 </body>
 </html> 
