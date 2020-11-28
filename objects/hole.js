@@ -1,12 +1,12 @@
-var new_x = Math.random() * 1000;
-var new_y = Math.random() * 600; 
+// var new_x = Math.random() * 1000;
+// var new_y = Math.random() * 600;
 
 class hole {
   
     // create a ball object
-    constructor(x,y,r,color) {
-      this.x = x;  // x position
-      this.y = y;  // y position
+    constructor(r,color) {
+      this.x = Math.random() * 1000;  // x position
+      this.y = Math.random() * 600;  // y position
       this.radius = r; // radius
       this.color = color;
     }
@@ -20,13 +20,14 @@ class hole {
 
     } 
 
-    newPosition(){
-        new_x = Math.random() * 1000;
-        new_y = Math.random() * 500; 
-    }
+    // newPosition(){
+    //     new_x = Math.random() * 1000;
+    //     new_y = Math.random() * 500; 
+    // }
+
   }
 
-  var black_hole = new hole(new_x,new_y, 50, 'black');
+var black_hole = new hole( 50, 'black');
 
 
 

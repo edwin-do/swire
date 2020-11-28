@@ -16,7 +16,7 @@ function game_logic()
 
   if (distance < black_hole.radius + player_ball.radius) {
         hits++;
-        black_hole.newPosition();
+        black_hole = new hole(50, 'black');
       }
   
   // check if the player ball collides with any other balls
