@@ -40,4 +40,5 @@ class ball {
     }
   }
 
+  // create player ball
   var player_ball = new ball(25,250,0,0,0,0,25,'green');

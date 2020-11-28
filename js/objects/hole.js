@@ -21,7 +21,8 @@ class hole {
 
   }
 
-var black_hole = new hole('black');
+  // create black hole
+  var black_hole = new hole('black');
 
 
 
