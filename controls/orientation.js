@@ -1,4 +1,4 @@
-
+// for accelerometer control
 window.ondeviceorientation = function(event)
 {
   // the alpha/beta/gamma values are in the event object, output them here

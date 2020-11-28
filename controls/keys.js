@@ -1,6 +1,7 @@
+    // For keyboard controls
     // change the direction of the ball based on the arrow key input
     document.onkeydown = function(e) {
-        console.log(e.code);
+        // console.log(e.code);
         if (e.code == "ArrowDown") player_ball.vy = 5;
         else if (e.code == "ArrowUp") player_ball.vy = -5;
         else if (e.code == "ArrowRight") player_ball.vx = 5;

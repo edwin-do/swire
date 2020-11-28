@@ -5,7 +5,7 @@
         var canvas = document.getElementById("canvas");    
   
         // create the enemy balls
-        createEnemies();
+        // createEnemies();
         // recogonizes and carries out any game logic, i.e. collisions 
         game_logic();
   
@@ -19,7 +19,7 @@
           player_ball.draw();
 
           black_hole.draw();
-          for (var i = 0; i < num_enemies; i++) enemy_balls[i].draw();
+          // for (var i = 0; i < num_enemies; i++) enemy_balls[i].draw();
   
           // draw the hits to the screen in the top-left corner
           c.font = "20px serif";
