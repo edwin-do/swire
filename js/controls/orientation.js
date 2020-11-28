@@ -1,31 +1,27 @@
 // for accelerometer control
+var x_sensitivity = 0.3;
+var y_sensitivity = 4;
+
 window.ondeviceorientation = function(event)
 {
-  // the alpha/beta/gamma values are in the event object, output them here
-  document.getElementById("alpha").innerHTML = event.alpha;
-  document.getElementById("beta").innerHTML = event.beta;
-  document.getElementById("gamma").innerHTML = event.gamma;
-
-// controls ball movement(portrait orientation)
-  if (event.beta < 90){
-    player_ball.vy = -8*(event.beta/90);
+// controls ball movement (Display up orientation with beta at 20)
+// assumes the natural phone position is 20; ranges from 10-40 for natual movement
+  if (event.beta < 30 && event.beta > 10){
+    player_ball.vy = -1.5*y_sensitivity*(event.beta/10);
   }
-  else if(event.beta > 90){
-    player_ball.vy = 8*(event.beta/90);
+  else if(event.beta > 20 && event.beta < 40){
+    player_ball.vy = y_sensitivity*(event.beta/10);
   }
 
-  player_ball.vx = 0.5*event.alpha;
+  player_ball.vx = x_sensitivity*event.alpha;
+}
 
+document.getElementById("btn_sensitivityX").onclick = function(){
+  x_sensitivity = document.getElementById("inputSensitivityX").value;
+  document.getElementById("sensitivityX").textContent = document.getElementById("inputSensitivityX").value;
+}
 
-  // determine if the device is pointing left or pointint right
-  if (event.alpha < 0) 
-    document.getElementById("horizontal").innerHTML = "Left";
-  else 
-    document.getElementById("horizontal").innerHTML = "Right";
-
-  // determine if the device is pointing up or down
-  if (event.beta < 0) 
-    document.getElementById("vertical").innerHTML = "Down";
-  else 
-    document.getElementById("vertical").innerHTML = "Up";
+document.getElementById("btn_sensitivityY").onclick = function(){
+  y_sensitivity = document.getElementById("inputSensitivityY").value;
+  document.getElementById("sensitivityY").textContent = document.getElementById("inputSensitivityY").value;
 }

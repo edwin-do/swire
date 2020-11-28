@@ -14,14 +14,41 @@
         Display this text if browser does not support canvas.
       </canvas>
     </div>
+    <div class="text-center">
+      <button>Help</button>
+      <button>Settings</button>
+    </div>
+    <div id="content">
+      <div id="help">
 
+      </div>
+      <div id="settings">
+        <h5 class="font-weight-light mt-2">Current Horizontal Sensitivity: <span id="sensitivityX">0.3</span></h5>
+        <div class="input-group mt-2">
+          <select class="custom-select" id="inputSensitivityX" aria-label="Example select with button addon">
+            <option value="0.1">0.1 - Low</option>
+            <option value="0.3">0.3 - Med</option>
+            <option value="0.6">0.6 - High</option>
+          </select>
+          <div class="input-group-append">
+            <button id="btn_sensitivityX" onclick="updateSensitivityX()" class="btn btn-secondary" type="button">Change</button>
+          </div>
+        </div>
 
-    <p>Alpha: <span id="alpha"></span></p>
-    <p>Beta: <span id="beta"></span></p>
-    <p>Gamma: <span id="gamma"></span></p>
+        <h5 class="font-weight-light mt-2">Current Vertical Sensitivity: <span id="sensitivityY">4</span></h5>
+        <div class="input-group mt-2">
+          <select class="custom-select" id="inputSensitivityY" aria-label="Example select with button addon">
+            <option value="2">2 - Low</option>
+            <option value="4">4 - Med</option>
+            <option value="6">6 - High</option>
+          </select>
+          <div class="input-group-append">
+            <button id="btn_sensitivityY" onclick="updateSensitivityY()" class="btn btn-secondary" type="button">Change</button>
+          </div>
+        </div>
+      </div>
 
-    <p>Horizontal Tilt: <span id="horizontal"></span></p>
-    <p>Vertical Tilt: <span id="vertical"></span></p>
+    </div>
   </div>
 
   <!-- Game JS Files -->
