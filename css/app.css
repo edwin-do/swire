@@ -8,3 +8,7 @@ canvas{
 
     border: 3px black solid;
 }
+
+#canvas{
+    width: 100%;
+}

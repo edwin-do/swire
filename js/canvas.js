@@ -2,7 +2,9 @@
     var c = canvas.getContext("2d");
     window.onload = function() {
         // get the canvas element 
-        var canvas = document.getElementById("canvas");    
+        var canvas = document.getElementById("canvas");
+        var heightRatio = 0.65;
+        canvas.height = canvas.width * heightRatio;    
   
         // create the enemy balls
         // createEnemies();
