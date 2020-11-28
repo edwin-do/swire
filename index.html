@@ -15,11 +15,11 @@
       </canvas>
     </div>
     <div class="text-center">
-      <button id="btnHelp">Help</button>
-      <button id="btnSettings">Settings</button>
+      <button class="btn btn-info" id="btnHelp">Help</button>
+      <button class="btn btn-secondary"id="btnSettings">Settings</button>
     </div>
     <div id="content">
-      <div id="help">
+      <div class="mt-3" id="help">
         <h5>How To Play</h5>
         <p>Tilt your device to move the green ball into the black square (hole).
            Try changing your sensitivity in settings if you have difficulties
@@ -27,7 +27,7 @@
         <p>The label "Drops" keeps track of your score. Have fun! </p>
 
       </div>
-      <div id="settings">
+      <div class="mt-3" id="settings">
         <h5>Settings</h5>
         <h5 class="font-weight-light mt-2">Current Horizontal Sensitivity: <span id="sensitivityX">0.3</span></h5>
         <div class="input-group mt-2">
@@ -42,7 +42,7 @@
         </div>
 
         <h5 class="font-weight-light mt-2">Current Vertical Sensitivity: <span id="sensitivityY">4</span></h5>
-        <div class="input-group mt-2">
+        <div class="input-group mt-2 mb-3">
           <select class="custom-select" id="inputSensitivityY" aria-label="Example select with button addon">
             <option value="2">2 - Low</option>
             <option value="4">4 - Med</option>
